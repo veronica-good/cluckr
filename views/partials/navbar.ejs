@@ -1,0 +1,29 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    
+    <div class="container">
+        <a class="navbar-brand" href="/index">
+          <img src="/images/rooster.png" alt="rooster" width="80" height="80">
+        </a>
+    </div>
+
+    
+    <div class="container d-flex justify-content-end">
+        <div>
+            <a href="/clucks/new"><button class="btn btn-secondary">Cluck!</button></a>
+        </div>
+        <% if (username){ %>
+        <h5>  <%= username %>  </h5>
+        <form action="/log_out" method="POST" class="form-inline">
+            <button type="log-out" class="btn btn-secondary">Log out</button>
+        </form>
+
+        <%} else {%>
+        <div>
+            <a href='/home'><button class="btn btn-secondary">Sign In</button></a>
+        </div>
+
+        <%}%>
+
+    </div>
+
+</nav>

@@ -1,0 +1,29 @@
+.navbar{
+    background-color: rgb(197, 194, 194);
+    overflow: hidden;
+}
+
+.navbar a{
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+}
+
+.btn{
+    background-color: #3c3d3c; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.container{
+    border: #3c3d3c 1px solid;
+}
+
