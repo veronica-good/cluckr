@@ -1,0 +1,34 @@
+<%- include('../partials/header') %>
+<% if (username){ %>
+<form action='/clucks' method='POST'>
+<div class="container mb-3">
+    <label for="content" class="form-label">Content</label>
+    <textarea 
+    class="form-control" 
+    name="content" 
+    cols='60'
+    rows='5'
+    placeholder="Whatchoo cluckin' 'bout?">
+</textarea>
+  </div>
+  <div class="container mb-3">
+    <label for="image_url" class="form-label">Image URL</label>
+    <input type="url" class="form-control" name="image_url" placeholder="https://i.imgut.com/hjhfg.jpg">
+    <br>
+    <div>
+       <button type="submit" class="btn btn-outline-secondary">Cluck!</button> 
+    </div>
+     </div>
+</form>
+<%} else {%>
+    <form action="/sign_in" method="POST" class="container g-3">
+        <div>
+            <label for="username" class="form-label">Username:</label>
+            <input type="text" class="form-control" name="username" placeholder="e.g. Veronica Gudova">
+          </div>
+          <br>
+          <button type="submit" class="btn btn-outline-secondary">Sign In</button>  
+    </form>
+<%}%>
+
+<%- include('../partials/footer') %>
